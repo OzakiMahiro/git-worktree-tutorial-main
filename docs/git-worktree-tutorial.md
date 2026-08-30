@@ -3,7 +3,9 @@
 同じリポジトリの複数のブランチを、**別々のフォルダーで同時に開いて作業する**ための機能が `git worktree` です。
 この手順書は、参考記事の流れを実際にこのリポジトリで再現しながら、**ターミナル（CLI）** と **VS Code の GUI** の両方のやり方を並べて説明します。
 
-- 参考記事: [【入門】Git Worktree とは？ 初心者向けに解説](https://zenn.dev/tmasuyama1114/articles/git_worktree_beginner)
+- 参考記事:
+  - [【入門】Git Worktree とは？ 初心者向けに解説](https://zenn.dev/tmasuyama1114/articles/git_worktree_beginner)
+  - [VSCodeにてgit worktreeをGUI操作で使いこなす](https://zenn.dev/yuzora_yu/articles/vscode-git-worktree)
 - 検証環境: macOS / git 2.50.1 / VS Code 1.134.0（日本語言語パック）/ uv 0.11.25
 - 掲載しているコマンド出力は、このリポジトリで実際に実行した結果です。パスのうち各自の環境で異なる部分は `<<PATH_TO_PROJECT>>` / `~/...` と省略表記にしています
 - コードブロックの `>>>` で始まる行は**コマンドの出力**です（そのまま貼り付けて実行しないでください）
@@ -131,12 +133,11 @@ git worktree list
 
 ### VS Code GUI
 
-ソース管理ビュー（`⌃⇧G`）を開き、リポジトリ名の右にある `…`（表示とその他のアクション）→ **ワークツリー** サブメニューを開きます。
-worktree が 1 つもないときは「このリポジトリにはワークツリーがありません。」と表示されます。
+ソース管理ビュー（`⌃⇧G`）を開き、リポジトリ名の右にある `…`（表示とその他のアクション）→ **ワークツリー** サブメニューを使用できます。
+
+以下の画像の通り、リポジトリ一覧として、worktree も確認できます (画像は、`git-worktree-tutorial-main` に加えて、`feature/new-ui` worktreeが存在する様子)。
 
 ![ソース管理ビューのワークツリーサブメニュー](images/05-scm-worktrees-menu.png)
-
-*ソース管理ビューの `…` メニューを開き、「ワークツリー」サブメニューが見えている状態*
 
 ---
 
