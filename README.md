@@ -11,13 +11,20 @@
 worktree の考え方から、作成・並行作業・マージ・後片付け・つまずきポイントまでを、
 **CLI コマンド**と **VS Code の GUI 操作**を各ステップで並べて説明しています。掲載しているコマンド出力はすべて実行結果です。
 
+## Claude Code と併用する場合
+
+👉 **[docs/claude-code-with-worktree.md](docs/claude-code-with-worktree.md)**
+
+worktree を作ると Claude Code の会話履歴が分断されます。その理由と、どう運用すればよいかをまとめています。
+
 ## このリポジトリの中身
 
 ```
 .
 ├── docs/
-│   ├── git-worktree-tutorial.md   # 手順書（本体）
-│   └── images/                    # 手順書に差し込むスクリーンショット置き場
+│   ├── git-worktree-tutorial.md      # 手順書（本体）
+│   ├── claude-code-with-worktree.md  # Claude Code と併用するときの注意
+│   └── images/                       # 手順書に差し込むスクリーンショット置き場
 ├── src/
 │   ├── greeting.py                # greet(): 挨拶文を返す
 │   └── calculator.py              # add() / multiply()
