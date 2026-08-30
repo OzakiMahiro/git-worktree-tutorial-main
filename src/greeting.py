@@ -8,12 +8,12 @@ def greet(name: str) -> str:
     Parameters
     ----------
     name : str
-        挨拶する相手の名前。
+        挨拶する相手の名前
 
     Returns
     -------
     str
-        組み立てた挨拶文。
+        組み立てた挨拶文
     """
     return f"こんにちは、{name}さん！"
 
@@ -25,11 +25,11 @@ def greet_en(name: str) -> str:
     Parameters
     ----------
     name : str
-        挨拶する相手の名前。
+        挨拶する相手の名前
 
     Returns
     -------
     str
-        組み立てた英語の挨拶文。
+        組み立てた英語の挨拶文
     """
     return f"Hello, {name}!"
